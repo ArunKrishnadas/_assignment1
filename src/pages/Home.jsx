@@ -1,6 +1,7 @@
  import React, { useState, useEffect } from 'react';
 import { Navbar, Nav, Table, Form } from 'react-bootstrap';
-// import EmployeeForm from './EmployeeForm';
+
+import './employeeform.css';
 
 export default function Home() {
   const [employees, setEmployees] = useState([]);
@@ -20,7 +21,7 @@ export default function Home() {
   return (
     <div>
       <Navbar bg="" expand="lg">
-        <Navbar.Brand href="#home" style={{ color: 'yellow' }}>Employee List</Navbar.Brand>
+        <Navbar.Brand href="#home" style={{ color: '#339FFF' }}><b>Employee List</b></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
@@ -40,14 +41,14 @@ export default function Home() {
           <Table striped bordered hover className="custom-table">
             <thead>
               <tr>
-                <th style={{ color: 'yellow' }}>ID</th>
-                <th style={{ color: 'yellow' }}>Name</th>
-                <th style={{ color: 'yellow' }}>Email</th>
+                <th style={{ color: '#339FFF' }}>ID</th>
+                <th style={{ color: '#339FFF' }}>Name</th>
+                <th style={{ color: '#339FFF' }}>Email</th>
               </tr>
             </thead>
             <tbody>
               {filteredEmployees.map(employee => (
-                <tr key={employee.id}>
+                 <tr key={employee.id} style={{ cursor: 'pointer' }} className="hover-effect">
                   <td style={{ color: 'white' }}>{employee.id}</td>
                   <td style={{ color: 'white' }}>{employee.name}</td>
                   <td style={{ color: 'white' }}>{employee.email}</td>
@@ -57,6 +58,7 @@ export default function Home() {
           </Table>
         </div>
       </div>
+     
     </div>
   );
 }

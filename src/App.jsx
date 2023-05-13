@@ -1,6 +1,4 @@
 
-
-// export default App;
 import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Navbar from './components/Navbar';

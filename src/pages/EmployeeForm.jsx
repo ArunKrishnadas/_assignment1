@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-// import { Link } from 'react-router-dom';
 import { Form, Button } from 'react-bootstrap';
-import './employeeform.css'; // Import the CSS file
+import './employeeform.css'; 
 
 
 export default function EmployeeForm({ setEmployees }) {
@@ -34,31 +33,6 @@ export default function EmployeeForm({ setEmployees }) {
   }
 
   return (
-    // <div>
-    //   <div className="container my-4">
-    //     <h1>Employee Form</h1>
-    //     <Form onSubmit={handleSubmit}>
-    //       <Form.Group controlId="formId">
-    //         <Form.Label>ID</Form.Label>
-    //         <Form.Control type="text" placeholder="Enter ID" value={id} onChange={e => setId(e.target.value)} />
-    //       </Form.Group>
-
-    //       <Form.Group controlId="formName">
-    //         <Form.Label>Name</Form.Label>
-    //         <Form.Control type="text" placeholder="Enter name" value={name} onChange={e => setName(e.target.value)} />
-    //       </Form.Group>
-
-    //       <Form.Group controlId="formEmail">
-    //         <Form.Label>Email</Form.Label>
-    //         <Form.Control type="email" placeholder="Enter email" value={email} onChange={e => setEmail(e.target.value)} />
-    //       </Form.Group>
-
-    //       <Button variant="primary" type="submit">
-    //         Submit
-    //       </Button>
-    //     </Form>
-    //   </div>
-    // </div>
     <div>
   <div className="container my-4">
     <h1 className="form-heading">Employee Form</h1>
